@@ -1,217 +1,899 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal portfolio</title>
+
+    <title>Lakshman Singh Jhala | Web Developer</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/fb304e4fc3.js" crossorigin="anonymous"></script>
+
+    <script
+        src="https://kit.fontawesome.com/fb304e4fc3.js"
+        crossorigin="anonymous">
+    </script>
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-    <nav>
-        <img src="Images/logo.png.jpg" class="logo">
-        <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-        </ul>
 
-        <i class="fas fa-bars" onclick="openmenu()"></i>
-    </nav>
-    <div class="header-text">
-        <p>UI/UX designer</p>
-        <h1>Hi, I'm <span>Lakshman</span> <br> from Udaipur </h1>
-    </div>
-</div>
-</div>
+    <!-- =====================================================
+         HEADER / HERO
+    ====================================================== -->
 
-<!-- ------about----- -->
+    <header id="header">
 
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="Images/user.png.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="title-about">About Me.</h1>
-                <p>I'm a passionate and detail-oriented web developer with a strong foundation in both front-end and back-end technologies. I specialize in creating responsive, user-friendly websites and web applications that not only look great but also perform seamlessly. With experience in HTML, CSS, JavaScript, and frameworks like React and Node.js, I bring creative ideas to life through clean, efficient code.</p>
+        <div class="container">
 
-                <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-                <ul>
-                    <li><span>Frontend Development</span><br>Proficient in HTML, CSS, and JavaScript for building responsive and interactive web interfaces.</li>
-                    <li><span> Tools & Technologies</span><br>Experienced with VS Code and its extensions, Chrome DevTools, and GitHub for efficient development and debugging.</li>
-                    <li><span> Learning or Exploring</span><br> Expanding skills in JavaScript DOM projects, API integration, and modern frameworks like React.</li>
+            <!-- NAVBAR -->
+
+            <nav>
+
+                <ul id="sidemenu">
+
+                    <li>
+                        <a href="#header" class="active">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio">Work</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                    <li class="menu-close">
+                        <i
+                            class="fas fa-times"
+                            onclick="closemenu()"
+                            aria-label="Close menu">
+                        </i>
+                    </li>
+
                 </ul>
-            </div>
-            
-            <div class="tab-contents" id="education">
-                <ul>
-                    <li><span>Bachelor of Technology (B.Tech)</span><br>In Computer Science with a specialization in Cyber Security – Currently pursuing at Sir Padampat Singhania University, Udaipur, Rajasthan</li>
-                    <li><span>Class 12th (CBSE)</span><br>Science Stream (PCM) – St. Teresa Vidya Deep Senior Secondary School, Completed in 2022.</li>
-                    <li><span>Class 10th (CBSE)</span><br>St. Teresa Vidya Deep Senior Secondary School, Completed in 2020</li>
-                </ul>
-            </div>
-        </div>
-        </div>
-    </div>
-</div> 
 
-<!-- ------service----- -->
+                <i
+                    class="fas fa-bars menu-open"
+                    onclick="openmenu()"
+                    aria-label="Open menu">
+                </i>
 
-<div id="services">
-    <div class="container">
-        <h1 class="title-services">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-laptop-code"></i>
-                <h2>web design</h2>
-                <p>I have a strong interest in web design, which involves creating the structure, layout, and visual appearance of websites using HTML, CSS, and JavaScript. I focus on building clean, user-friendly, and responsive designs that work well across all devices.</p>
-                <a href="#">learn  more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-webflow"></i>
-                <h2>ui/ux design</h2>
-                <p>I'm learning the basics of UI/UX design, which focuses on creating user-friendly and visually appealing digital experiences. UI (User Interface) is about how a website looks, while UX (User Experience) is about how it feels to use. I aim to design interfaces that are simple, clean, and easy to navigate, improving the overall user journey.</p>
-                <a href="#">learn  more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store-ios"></i>
-                <h2>Portfolio Website Development</h2>
-                <p>I design and develop custom portfolio websites that help individuals showcase their skills, projects, education, and contact information in a clean and professional way. Whether you're a student, developer, designer, or freelancer, a portfolio website is your digital identity.</p>
-                <a href="#">learn  more</a>
-            </div>
-        </div>
-    </div>
-</div>
+            </nav>
 
-<!-- -------portfolio-------- -->
 
-<div id="portfolio">
-    <div class="container">
-        <h1 class="title-portfolio">Portfolio</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="Images/work-1.png.jpg">
-                <div class="layer">
-                    <h3>JavaScript for Beginners</h3>
-                    <p>Completed an introductory course covering JavaScript fundamentals, including variables, functions, arrays, conditionals, loops, and basic DOM manipulation.</p>
-                    <a href="#"><i class="fa-solid fa-certificate"></i></i></a>
+            <!-- HERO CONTENT -->
+
+            <div class="header-text">
+
+                <p>Web Developer • UI/UX Enthusiast</p>
+
+                <h1>
+                    Hi, I'm
+                    <span>Lakshman</span>
+                    <br>
+                    I build digital experiences.
+                </h1>
+
+                <p class="hero-description">
+                    I create clean, responsive and user-friendly
+                    websites using modern web technologies.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#portfolio"
+                        class="hero-btn primary-btn">
+                        View My Work
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <a
+                        href="#contact"
+                        class="hero-btn secondary-btn">
+                        Let's Talk
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
                 </div>
+
             </div>
-            <div class="work">
-                <img src="Images/work-2.png.jpg">
-                <div class="layer">
-                    <h3>IBM SkillsBuild Internship</h3>
-                    <p>Successfully completed a summer internship program focused on Data Analytics offered by IBM SkillsBuild, from 24th June 2024 to 5th August 2024..</p>
-                    <a href="#"><i class="fa-solid fa-link-slash"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="Images/work-3.png.jpg">
-                <div class="layer">
-                    <h3>Data Analytics</h3>
-                    <p>Gained hands-on experience in working with datasets, performing data cleaning, generating visualizations, and understanding basic data-driven decision-making.</p>
-                    <a href="#"><i class="fa-brands fa-react"></i></i></a>
-                </div>
-            </div>
+
         </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
 
-<!-- --------contact------- -->
+    </header>
 
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="title-contact">My Contact</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>lakshmansinghjhala123123@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>7300264840</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/lakshman.jhala/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/lakshman-singh-jhala-3920902aa/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Lakshmanjhala"><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- IMAGE -->
+
+                <div class="about-col-1">
+
+                    <img
+                        src="Images/user.png.jpg"
+                        alt="Lakshman Singh Jhala">
+
                 </div>
-                <a href="Images/Lakshman singh jhala.pdf.pdf" download class="btn btn2">Download CV</a>
+
+
+                <!-- CONTENT -->
+
+                <div class="about-col-2">
+
+                    <p class="section-label">
+                        01 / ABOUT
+                    </p>
+
+                    <h2 class="title-about">
+                        About Me.
+                    </h2>
+
+                    <p class="about-description">
+                        I'm a passionate web developer focused on
+                        building clean, responsive websites that help
+                        businesses and users interact easily.
+
+                        I enjoy turning ideas into real digital
+                        experiences using HTML, CSS and JavaScript,
+                        while continuously learning modern frontend
+                        technologies like React.
+                    </p>
+
+
+                    <!-- TABS -->
+
+                    <div class="tab-titles">
+
+                        <p
+                            class="tab-links active-link"
+                            onclick="opentab('skills', this)">
+                            Skills
+                        </p>
+
+                        <p
+                            class="tab-links"
+                            onclick="opentab('education', this)">
+                            Education
+                        </p>
+
+                    </div>
+
+
+                    <!-- SKILLS -->
+
+                    <div
+                        class="tab-contents active-tab"
+                        id="skills">
+
+                        <ul>
+
+                            <li>
+                                <span>Frontend Development</span>
+                                <br>
+                                HTML, CSS and JavaScript for building
+                                responsive and interactive web interfaces.
+                            </li>
+
+                            <li>
+                                <span>Tools & Technologies</span>
+                                <br>
+                                VS Code, Chrome DevTools and GitHub
+                                for efficient development and debugging.
+                            </li>
+
+                            <li>
+                                <span>Currently Learning</span>
+                                <br>
+                                JavaScript DOM projects, API integration
+                                and modern frameworks like React.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- EDUCATION -->
+
+                    <div
+                        class="tab-contents"
+                        id="education">
+
+                        <ul>
+
+                            <li>
+                                <span>Bachelor of Technology</span>
+                                <br>
+                                Computer Science with specialization
+                                in Cyber Security — Sir Padampat
+                                Singhania University, Udaipur, Rajasthan.
+                            </li>
+
+                            <li>
+                                <span>Class 12th — CBSE</span>
+                                <br>
+                                Science Stream (PCM), St. Teresa Vidya
+                                Deep Senior Secondary School — 2022.
+                            </li>
+
+                            <li>
+                                <span>Class 10th — CBSE</span>
+                                <br>
+                                St. Teresa Vidya Deep Senior Secondary
+                                School — 2020.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
             </div>
-            <div class="contact-right"></div>
-            <form name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="Email" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
+
         </div>
-    </div>
-    <div class="copyright">
-        <p><p>&copy; 2025 Lakshman Singh Jhala. All rights reserved.</p>
-<i class="fa-solid fa-heart"></i> thank you</p>
-    </div>
-</div>
+
+    </section>
 
 
+    <!-- =====================================================
+         SERVICES
+    ====================================================== -->
 
-<script>
+    <section id="services">
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+        <div class="container">
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+            <p class="section-label">
+                02 / EXPERTISE
+            </p>
+
+            <h2 class="title-services">
+                What I Do.
+            </h2>
+
+
+            <div class="services-list">
+
+                <!-- SERVICE 01 -->
+
+                <div class="service-card">
+
+                    <span class="service-number">01</span>
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        I build responsive and functional websites
+                        using HTML, CSS and JavaScript with a focus
+                        on clean structure and performance.
+                    </p>
+
+                    <a href="#contact">
+                        Let's build →
+                    </a>
+
+                </div>
+
+
+                <!-- SERVICE 02 -->
+
+                <div class="service-card">
+
+                    <span class="service-number">02</span>
+
+                    <i class="fa-solid fa-pen-ruler"></i>
+
+                    <h3>
+                        UI/UX Design
+                    </h3>
+
+                    <p>
+                        I focus on creating simple, clean and
+                        intuitive interfaces that make websites
+                        easy and enjoyable to use.
+                    </p>
+
+                    <a href="#contact">
+                        Let's design →
+                    </a>
+
+                </div>
+
+
+                <!-- SERVICE 03 -->
+
+                <div class="service-card">
+
+                    <span class="service-number">03</span>
+
+                    <i class="fa-solid fa-laptop-code"></i>
+
+                    <h3>
+                        Portfolio Websites
+                    </h3>
+
+                    <p>
+                        I create professional portfolio websites
+                        that help students, developers, designers
+                        and freelancers showcase their work online.
+                    </p>
+
+                    <a href="#contact">
+                        Start a project →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SELECTED WORK
+    ====================================================== -->
+
+    <section id="portfolio">
+
+        <div class="container">
+
+            <p class="section-label">
+                03 / SELECTED WORK
+            </p>
+
+            <h2 class="title-portfolio">
+                Things I've Built.
+            </h2>
+
+
+            <div class="work-list">
+
+                <!-- PROJECT 01 -->
+
+                <div class="work">
+
+                    <img
+                        src="Images/work-1.png.jpg"
+                        alt="JavaScript project">
+
+                    <div class="layer">
+
+                        <span class="project-number">
+                            01
+                        </span>
+
+                        <h3>
+                            JavaScript for Beginners
+                        </h3>
+
+                        <p>
+                            Completed an introductory JavaScript
+                            course covering variables, functions,
+                            arrays, loops, conditionals and basic
+                            DOM manipulation.
+                        </p>
+
+                        <a href="#" aria-label="View certificate">
+                            <i class="fa-solid fa-certificate"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 02 -->
+
+                <div class="work">
+
+                    <img
+                        src="Images/work-2.png.jpg"
+                        alt="IBM SkillsBuild Internship">
+
+                    <div class="layer">
+
+                        <span class="project-number">
+                            02
+                        </span>
+
+                        <h3>
+                            IBM SkillsBuild Internship
+                        </h3>
+
+                        <p>
+                            Successfully completed a summer internship
+                            program focused on Data Analytics through
+                            IBM SkillsBuild from June 24 to August 5, 2024.
+                        </p>
+
+                        <a href="#" aria-label="View internship">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 03 -->
+
+                <div class="work">
+
+                    <img
+                        src="Images/work-3.png.jpg"
+                        alt="Data Analytics project">
+
+                    <div class="layer">
+
+                        <span class="project-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Data Analytics
+                        </h3>
+
+                        <p>
+                            Gained hands-on experience with datasets,
+                            data cleaning, visualization and basic
+                            data-driven decision making.
+                        </p>
+
+                        <a href="#" aria-label="View project">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a href="#" class="btn">
+                See More Work
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROCESS
+    ====================================================== -->
+
+    <section id="process">
+
+        <div class="container">
+
+            <p class="section-label">
+                04 / MY PROCESS
+            </p>
+
+            <h2 class="process-title">
+                From idea to experience.
+            </h2>
+
+
+            <div class="process-list">
+
+                <div class="process-item">
+
+                    <span>01</span>
+
+                    <h3>
+                        Discover
+                    </h3>
+
+                    <p>
+                        Understand the goal, audience and
+                        requirements of the project.
+                    </p>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span>02</span>
+
+                    <h3>
+                        Design
+                    </h3>
+
+                    <p>
+                        Create a clean interface and intuitive
+                        user experience.
+                    </p>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span>03</span>
+
+                    <h3>
+                        Develop
+                    </h3>
+
+                    <p>
+                        Turn the design into a responsive,
+                        functional website.
+                    </p>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span>04</span>
+
+                    <h3>
+                        Refine
+                    </h3>
+
+                    <p>
+                        Test, improve and polish the final
+                        digital experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- CONTACT LEFT -->
+
+                <div class="contact-left">
+
+                    <p class="section-label">
+                        05 / LET'S TALK
+                    </p>
+
+                    <h2 class="title-contact">
+                        Let's build something great.
+                    </h2>
+
+                    <p>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        lakshmansinghjhala123123@gmail.com
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        7300264840
+                    </p>
+
+
+                    <!-- SOCIAL ICONS -->
+
+                    <div class="social-icons">
+
+                        <a
+                            href="https://www.instagram.com/lakshman.jhala/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/lakshman-singh-jhala-3920902aa/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+
+                            <i class="fa-brands fa-linkedin"></i>
+
+                        </a>
+
+                        <a
+                            href="https://github.com/Lakshmanjhala"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                        <a
+                            href="#"
+                            aria-label="Twitter">
+
+                            <i class="fa-brands fa-twitter"></i>
+
+                        </a>
+
+                        <a
+                            href="https://facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook">
+
+                            <i class="fa-brands fa-facebook"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- CV -->
+
+                    <a
+                        href="Images/LAKSHMAN-SINGH-JHALA.pdf.pdf"
+                        download
+                        class="btn btn2">
+
+                        Download CV
+                        <i class="fa-solid fa-download"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+
+                <div class="contact-right">
+
+                    <form name="submit-to-google-sheet">
+
+                        <input
+                            type="text"
+                            name="Name"
+                            placeholder="Your Name"
+                            autocomplete="name"
+                            required>
+
+                        <input
+                            type="email"
+                            name="Email"
+                            placeholder="Your Email"
+                            autocomplete="email"
+                            required>
+
+                        <textarea
+                            name="Message"
+                            rows="6"
+                            placeholder="Tell me about your project..."
+                            required></textarea>
+
+                        <button
+                            type="submit"
+                            class="btn btn2">
+
+                            Send Message
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                        <span id="msg"></span>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <footer class="copyright">
+
+            <p>
+                © 2026 Lakshman Singh Jhala.
+                All rights reserved.
+            </p>
+
+        </footer>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCRIPTS
+    ====================================================== -->
+
+    <script>
+
+        /* ---------- TABS ---------- */
+
+        const tablinks =
+            document.getElementsByClassName("tab-links");
+
+        const tabcontents =
+            document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, element) {
+
+            for (const tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (const tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            element.classList.add("active-link");
+
+            document
+                .getElementById(tabname)
+                .classList.add("active-tab");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+
+
+        /* ---------- GOOGLE SHEETS FORM ---------- */
+
+        const scriptURL =
+            "https://script.google.com/macros/s/AKfycbw5yzSsNBMyWnk3Iv_SI1wbZUY7IA6NuqUObCKR7koxBKDHLnit5s7HwulgL1awHkPF/exec";
+
+        const form =
+            document.forms["submit-to-google-sheet"];
+
+        const msg =
+            document.getElementById("msg");
+
+        form.addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            msg.textContent = "Sending...";
+
+            fetch(scriptURL, {
+                method: "POST",
+                body: new FormData(form)
+            })
+                .then(() => {
+
+                    msg.textContent =
+                        "Message sent successfully ✓";
+
+                    form.reset();
+
+                    setTimeout(() => {
+                        msg.textContent = "";
+                    }, 5000);
+
+                })
+                .catch(error => {
+
+                    msg.textContent =
+                        "Something went wrong. Please try again.";
+
+                    console.error("Error!", error);
+
+                });
+
+        });
+
+
+        /* ---------- MOBILE MENU ---------- */
+
+        const sidemenu =
+            document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
 
-</script>
+        function closemenu() {
+            sidemenu.style.right = "-260px";
+        }
 
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbw5yzSsNBMyWnk3Iv_SI1wbZUY7IA6NuqUObCKR7koxBKDHLnit5s7HwulgL1awHkPF/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message sent successfully"
-        setTimeout(function(){
-            msg.innerHTML = ""
-        },5000)
-        from.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+        /* ---------- ACTIVE NAVIGATION ---------- */
 
-<script>
-    var sidemenu = document.getElementById("sidemenu");
+        const sections =
+            document.querySelectorAll(
+                "#header, #about, #services, #portfolio, #process, #contact"
+            );
 
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
+        const navLinks =
+            document.querySelectorAll(
+                "nav ul li a"
+            );
+
+        window.addEventListener("scroll", () => {
+
+            let current = "";
+
+            sections.forEach(section => {
+
+                const sectionTop =
+                    section.offsetTop - 200;
+
+                const sectionHeight =
+                    section.offsetHeight;
+
+                if (
+                    window.scrollY >= sectionTop &&
+                    window.scrollY < sectionTop + sectionHeight
+                ) {
+                    current =
+                        section.getAttribute("id");
+                }
+
+            });
+
+            navLinks.forEach(link => {
+
+                link.classList.remove("active");
+
+                if (
+                    link.getAttribute("href") ===
+                    "#" + current
+                ) {
+                    link.classList.add("active");
+                }
+
+            });
+
+        });
+
+
+        /* ---------- CLOSE MOBILE MENU ---------- */
+
+        navLinks.forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                if (window.innerWidth <= 600) {
+                    closemenu();
+                }
+
+            });
+
+        });
+
+    </script>
 
 </body>
+
 </html>
